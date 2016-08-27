@@ -1,0 +1,29 @@
+Implement a Loan Oraginzation systems
+There are 2 Roles
+1)Applicant 
+2) Underwriter 
+
+User Stories
+	Applicant
+	1) Login 
+	2) Apply for a new Loan 
+		-Loan Amount ($)
+		-Term (12/24/36/48/60 months)
+		-Salary($)
+	3) View his loan history 
+Underwriter
+	1) Login 
+	2) View All Loans
+	3) Approve / Decline Loan
+		Status=Manual Approve or Manual Decline
+System Behavior
+if Loan Amount < $5000 AND Salary>1000 then Auto Approve 
+
+If Loan Amount >=5000, AND Salary<=10000 then auto decline 
+
+-otherwise refer  -LA  > 5000 & sal>1000
+					-LA<5000 & salary<1000
+
+
+The applicants database should simply have the loan amount the term and the salary 
+however the underwriter should have another column which is applicant name 
