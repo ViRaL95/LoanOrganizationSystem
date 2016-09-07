@@ -1,4 +1,4 @@
 <?php
-	$conn=mysql_connect('localhost','root','test123');
-	$db=mysql_select_db('LoanOrgSystem',$conn);
+	$conn=mysqli_connect('localhost','root','password','LoanOrgSystem');
+	$db=mysqli_select_db($conn,'LoanOrgSystem');
 ?>

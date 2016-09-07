@@ -2,15 +2,15 @@
 	include_once('db.php');
 	if(isset($_GET['approve'])){
 		$id=$_GET['approve'];
-		$res=mysql_query("SELECT * FROM underwriter WHERE ID='$id'");
-		$row=mysql_fetch_array($res);
+		$res=mysqli_query($conn,"SELECT * FROM underwriter WHERE num='$id'");
+		$row=mysqli_fetch_array($res);
 		
 	}
 	if(isset($_POST['newStatus'])){
 			$newStatus=$_POST['newStatus'];
 			$id=$_POST['id'];
-			$sql="UPDATE underwriter SET status='$newStatus' WHERE ID='$id'";
-			$res=mysql_query($sql) or die();
+			$sql="UPDATE underwriter SET refer='$newStatus' WHERE num='$id'";
+			$res=mysqli_query($conn,$sql) or die();
 			echo "<meta http-equiv='refresh'content='0;url=UnderwriterLoanHistory.php'>";
 	}
 ?>
