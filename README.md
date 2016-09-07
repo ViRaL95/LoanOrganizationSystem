@@ -1,2 +1,2 @@
 # LoanOrganizationSystem
-This Webpage manages Loans and connects to an mysql database through phpmyadmin. 
+This Webpage manages Loans and connects to an mysql database through phpmyadmin. I am able to edit loans, add new loans, and delete loans. I have two possible account types, an Underwriter and an Applicant. I am able to create new Applicant accounts, and create loans for different Applicant accounts. I am able to edit these loans for different accounts through the one Underwriter account. 
